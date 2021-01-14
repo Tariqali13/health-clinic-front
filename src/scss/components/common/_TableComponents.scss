@@ -1,0 +1,150 @@
+// for pc
+@media (min-width: 1245px) {
+    div.ContainerForTable {
+        height: 100%;
+        width: 100%;
+        @include flex;
+        padding-top: 90px;
+        overflow: scroll;
+        padding-bottom: 20px;
+
+        .TablePaper {
+            min-height: 90%;
+            max-height: 120%;
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+
+            div.PaperTopBar {
+                height: 60px;
+                width: 100%;
+                // border:1px solid black;
+                @include flex;
+                justify-content: space-between;
+                padding: 15px;
+
+                h2.PageTitle {
+                    font-size: 20px;
+                    // font-weight: bold;
+                    color: $main-blue;
+                }
+                span.wrapperForButtons {
+                    @include flex;
+                }
+            }
+            div.TableContainerActual {
+                flex: 1;
+                @include flex;
+                flex-direction: column;
+                justify-content: flex-start;
+
+                .SearchInputs {
+                    border: 0.5px solid grey;
+                    padding: 3px;
+
+                }
+            }
+        }
+    }
+}
+// for tab
+@media (min-width: 760px) and (max-width: 1245px) {
+    div.ContainerForTable {
+        height: 100%;
+        width: 100%;
+        @include flex;
+        align-items: flex-start;
+
+        // padding-top: 50px;
+
+        .TablePaper {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            overflow: scroll;
+
+            div.PaperTopBar {
+                height: 60px;
+                width: 100%;
+                // border:1px solid black;
+                @include flex;
+                justify-content: flex-end;
+                padding: 15px;
+
+                h2.PageTitle {
+                    display: none;
+                    font-size: 20px;
+                    // font-weight: bold;
+                    color: $main-blue;
+                }
+                span.wrapperForButtons {
+                    @include flex;
+                }
+            }
+            div.TableContainerActual {
+                flex: 1;
+                @include flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                .SearchInputs {
+                    border: 0.5px solid grey;
+                    padding: 3px;
+                    
+                }
+            }
+        }
+    }
+}
+// for mob
+@media (max-width: 760px) {
+    div.ContainerForTable {
+        height: 100%;
+        width: 100%;
+        @include flex;
+        align-items: flex-start;
+
+        // padding-top: 50px;
+
+        .TablePaper {
+            height: 100%;
+            min-width: 100%;
+            display: flex;
+            flex-direction: column;
+            overflow: scroll;
+            div.PaperTopBar {
+                height: 60px;
+                width: 100%;
+                // border:1px solid black;
+                @include flex;
+                justify-content: flex-end;
+                padding: 15px;
+
+                h2.PageTitle {
+                    display: none;
+                    font-size: 20px;
+                    // font-weight: bold;
+                    color: $main-blue;
+                }
+                span.wrapperForButtons {
+                    @include flex;
+                    // flex-direction: row-reverse;
+                    button {
+                        font-size: 10px;
+                    }
+                }
+            }
+            div.TableContainerActual {
+                flex: 1;
+                @include flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                .SearchInputs {
+                    border: 0.5px solid grey;
+                    padding: 3px;
+                    
+                }
+            }
+        }
+    }
+}

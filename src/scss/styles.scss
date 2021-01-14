@@ -1,0 +1,182 @@
+// @import-normalize;
+// import fonts here if needed
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap");
+// import fonts here if needed
+
+// Import variables here
+@import "variables/AllVariables";
+// Import variables here
+
+// import mixins here
+@import "mixins/Flex";
+// import mixins here
+
+// reset settings here
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter;
+}
+body {
+    background-color: $main-blue;
+}
+
+// @media (min-width: 760px) and (max-width: 1245px) {
+//     body {
+//         min-height: 100vh;
+//         min-height: -webkit-fill-available;
+//     }
+//     html {
+//         height: -webkit-fill-available;
+//     }
+// }
+// // for mob
+// @media (max-width: 760px) {
+//     body {
+//         min-height: 100vh;
+//         min-height: -webkit-fill-available;
+//     }
+//     html {
+//         height: -webkit-fill-available;
+//     }
+// }
+body,
+html {
+    height: 100%;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    box-shadow: 0 0 0 30px white inset !important;
+}
+
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999;
+    background: $main-blue;
+}
+.preloader2 {
+    height: 100%;
+    width: 100%;
+}
+.spinner {
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+    position: absolute;
+    right: 0;
+    left: 0;
+    -webkit-box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.4);
+    top: 50%;
+    margin-top: -75px;
+}
+
+@-webkit-keyframes sk-rotateplane {
+    0% {
+        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    }
+    50% {
+        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+        transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    }
+    100% {
+        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+}
+
+@keyframes sk-rotateplane {
+    0% {
+        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    }
+    50% {
+        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+        transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    }
+    100% {
+        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+}
+#root {
+    transition: all 0.5s ease 0s;
+    background-color: rgb(246, 246, 246);
+}
+.scaleTheRoot {
+    transform: scale(0.9);
+    // margin-left: 100px;
+}
+/* width */
+// ::-webkit-scrollbar {
+//     width: 8px;
+//   }
+
+//   /* Track */
+//   ::-webkit-scrollbar-track {
+//     background: black;
+//   }
+
+//   /* Handle */
+//   ::-webkit-scrollbar-thumb {
+//     background: #5d2d11;
+//     transition: all 0.5s;
+//   }
+
+//   /* Handle on hover */
+//   ::-webkit-scrollbar-thumb:hover {
+//     background: $goldColor;
+
+//   }
+//   ::-webkit-scrollbar-button{
+//       height: 15px;
+//       background: $goldColor;
+//   }
+
+// reset settings here
+
+// import all the components here
+@import "components/login/Login";
+@import "components/navbar/Navbar";
+@import "components/topBar/Topbar";
+@import "components/common/AddEditDialog";
+@import "components/common/TableComponents";
+@import "components/dashboard/Dashboard";
+@import "components/billings/BillingsDialog";
+@import "components/footer/Footer";
+// import all the components here
+
+// for pc
+@media (min-width: 1245px) {
+}
+// for tab
+@media (min-width: 760px) and (max-width: 1245px) {
+    .DontNeedOnTab {
+        display: none !important;
+    }
+}
+// for mob
+@media (max-width: 760px) {
+    .DontNeedOnPhn {
+        display: none !important;
+    }
+}
+
+a.asim{
+    color:goldenrod
+}

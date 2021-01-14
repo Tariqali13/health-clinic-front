@@ -1,0 +1,224 @@
+// for pc
+@media (min-width: 1245px) {
+    section.LoginSection {
+        // background-image: url("/images/BG.png");
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        @include flex;
+
+        div.LoginBox {
+            height: 550px;
+            width: 450px;
+            background: rgba(255, 255, 255, 0.685);
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+            padding: 20px 20px;
+            display: flex;
+            flex-direction: column;
+
+            div.LoginBox1 {
+                flex: 1;
+                @include flex;
+                img {
+                    height: 75px;
+                }
+            }
+            div.LoginBox2 {
+                flex: 2;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h2.LoginHeading {
+                    color: $main-blue;
+                    font-weight: bold;
+                    font-size: 37px;
+                }
+                p.LoginWelcomeText {
+                    color: rgb(90, 90, 90);
+                    text-align: center;
+                    font-size: 11px;
+                    margin: 15px 0;
+                }
+
+                .loginInput {
+                    margin: 10px 0;
+                    width: 80%;
+                }
+                .MuiOutlinedInput-root {
+                    background: white !important;
+
+                    &:hover {
+                        outline: none;
+                        border: none;
+                    }
+                }
+                a.ForgetPasswordLink{
+                    color: $main-blue;
+                    font-size: 13px;
+                    padding: 5px;
+                    cursor: pointer;
+                    text-decoration: underline;
+                    align-self: flex-end;
+                    margin-right: 10%;
+                }
+            }
+            div.LoginBox3 {
+                flex: 1;
+
+                @include flex;
+            }
+        }
+    }
+}
+// for tab
+@media (min-width: 760px) and (max-width: 1245px) {
+    section.LoginSection {
+        // background-image: url("/images/BG.png");
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        @include flex;
+
+        div.LoginBox {
+            height: 550px;
+            width: 450px;
+            background: rgba(255, 255, 255, 0.685);
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+            padding: 20px 20px;
+            display: flex;
+            flex-direction: column;
+
+            div.LoginBox1 {
+                flex: 1;
+                @include flex;
+                img {
+                    height: 75px;
+                }
+            }
+            div.LoginBox2 {
+                flex: 2;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h2.LoginHeading {
+                    color: $main-blue;
+                    font-weight: bold;
+                    font-size: 37px;
+                }
+                p.LoginWelcomeText {
+                    color: rgb(90, 90, 90);
+                    text-align: center;
+                    font-size: 11px;
+                    margin: 15px 0;
+                }
+                .loginInput {
+                    margin: 10px 0;
+                    width: 80%;
+                }
+                .MuiOutlinedInput-root {
+                    background: white !important;
+
+                    &:hover {
+                        outline: none;
+                        border: none;
+                    }
+                }
+                a.ForgetPasswordLink{
+                    color: $main-blue;
+                    font-size: 13px;
+                    padding: 5px;
+                    cursor: pointer;
+                    text-decoration: underline;
+                    align-self: flex-end;
+                    margin-right: 10%;
+                }
+            }
+            div.LoginBox3 {
+                flex: 1;
+
+                @include flex;
+            }
+        }
+    }
+}
+// for mob
+@media (max-width: 760px) {
+    section.LoginSection {
+        // background-image: url("/images/BG.png");
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        @include flex;
+
+        div.LoginBox {
+            height: 75%;
+            width: 90%;
+            background: rgba(255, 255, 255, 0.685);
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+            padding: 20px 20px;
+            display: flex;
+            flex-direction: column;
+
+            div.LoginBox1 {
+                flex: 1;
+                @include flex;
+                img {
+                    height: 75px;
+                }
+            }
+            div.LoginBox2 {
+                flex: 2;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h2.LoginHeading {
+                    color: $main-blue;
+                    font-weight: bold;
+                    font-size: 37px;
+                }
+                p.LoginWelcomeText {
+                    color: rgb(90, 90, 90);
+                    text-align: center;
+                    font-size: 11px;
+                    margin: 15px 0;
+                }
+                .loginInput {
+                    margin: 10px 0;
+                    width: 100%;
+                }
+                .MuiOutlinedInput-root {
+                    background: white !important;
+
+                    &:hover {
+                        outline: none;
+                        border: none;
+                    }
+                }
+                a.ForgetPasswordLink{
+                    color: $main-blue;
+                    font-size: 13px;
+                    padding: 5px;
+                    cursor: pointer;
+                    text-decoration: underline;
+                    align-self: flex-end;
+                    margin-right: 0%;
+                }
+            }
+            div.LoginBox3 {
+                flex: 1;
+
+                @include flex;
+            }
+        }
+    }
+}
+
+.testingsingsg {
+    color: rgb(153, 153, 153);
+}

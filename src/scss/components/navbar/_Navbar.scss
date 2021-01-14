@@ -1,0 +1,52 @@
+nav.WebNav {
+    height: 100vh;
+    width: 115px;
+    background-color: $main-blue;
+    @include flex;
+    flex-direction: column;
+    
+    a.NavLinkInActive {
+        width: 100%;
+        height: 100px;
+        @include flex;
+        flex-direction: column;
+
+        span.Name{
+            color: white;
+            text-align: center;
+            margin-top: 10px;
+            font-size: 11px;
+        }
+    }
+    a.NavLinkActive{
+        width: 100%;
+        height: 100px;
+        @include flex;
+        flex-direction: column;
+        background-color: rgb(246, 246, 246);
+        // border-radius: 0 10px 10px 0;
+
+
+        span.Name{
+            color: $main-blue;
+            text-align: center;
+            margin-top: 10px;
+            font-size: 11px;
+        }
+    }
+}
+
+nav.NavMobTab{
+    height: 80px;
+    width: 100%;
+    background: $main-blue;
+    @include flex;
+    justify-content: space-between;
+    // padding: 0;
+
+    span.PathNames{
+        color:white;
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+}
